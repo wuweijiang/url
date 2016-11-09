@@ -1,0 +1,381 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.adv{
+    background: #444;
+    width:100%;
+    height: 40px;
+}
+.adv_text{
+    color: #a8a8aa;
+    font-size: 12px;
+    margin: 0 auto;
+    text-align: right;
+    line-height: 40px;
+    max-width: 976px;
+}
+#nav{
+    width:100%;
+    height:44px;
+    font-size: 18px;
+    background: black;
+}
+.nav-content{
+    max-width: 980px;
+    position: relative;
+    margin: 0 auto;
+    padding: 0 22px;
+}
+.nav-list{
+    width: auto;
+    height:44px;
+    margin: 0 -10px;
+    max-width: 980px;
+    text-align: justify;
+}
+.nav-item{
+    display: inline-block;
+    height:44px;
+    width: auto;
+    line-height: 44px;
+}
+.nav-link{
+    display: block;
+    background-size: 20px 44px;
+    background-image: url("../img/image_large.svg");
+    width: 20px;
+    padding:0 10px;
+    height: 44px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    text-decoration: none;
+    color:white;
+    margin-right: 66px;
+}
+.nav-link-mac{
+    display: block;
+    background-size: 20px 44px;
+    background-image: url("../img/image_large_mac.svg");
+    width: 20px;
+    height: 44px;
+    background-origin: content-box;
+    background-size: cover;
+    width: 1.9375em;
+    max-width: 52.7px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    padding: 0 10px;
+    margin-right: 66px;
+}
+.nav-link-ipad{
+    display: block;
+    background-size: 20px 44px;
+    background-image: url("../img/image_large_ipad.svg");
+    width: 20px;
+    height: 44px;
+    background-origin: content-box;
+    background-size: cover;
+    width: 1.875em;
+    max-width: 51px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    padding: 0 10px;
+    margin-right: 66px;
+}
+.nav-link-iphone{
+    display: block;
+    background-size: 20px 44px;
+    background-image: url("../img/image_large_iphone.svg");
+    width: 20px;
+    height: 44px;
+    background-origin: content-box;
+    background-size: cover;
+    width: 3em;
+    max-width: 81.6px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    padding: 0 10px;
+    margin-right: 66px;
+}
+.nav-link-watch{
+    display: block;
+    background-size: 20px 44px;
+    background-image: url("../img/image_large_watch.svg");
+    width: 20px;
+    height: 44px;
+    background-origin: content-box;
+    background-size: cover;
+    width: 3em;
+    max-width: 81.6px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    padding: 0 10px;
+    margin-right: 66px;
+}
+.nav-link-music{
+    display: block;
+    background-size: 20px 44px;
+    background-image: url("../img/image_large_music.svg");
+    width: 20px;
+    height: 44px;
+    background-origin: content-box;
+    background-size: cover;
+    width: 3em;
+    max-width: 81.6px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    padding: 0 10px;
+    margin-right: 66px;
+}
+.nav-link-jszc{
+    display: block;
+    background-size: 20px 44px;
+    background-image: url("../img/image_large_jszc.svg");
+    width: 20px;
+    height: 44px;
+    background-origin: content-box;
+    background-size: cover;
+    width: 3em;
+    max-width: 81.6px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    padding: 0 10px;
+    margin-right: 66px;
+}
+.nav-link-sousuo{
+    display: block;
+    background-size: 20px 44px;
+    background-image: url("../img/image_large_sousuo.svg");
+    width: 20px;
+    height: 44px;
+    background-origin: content-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    padding: 0 10px;
+    margin-right: 66px;
+}
+.nav-link-gwc{
+    display: block;
+    background-size: 20px 44px;
+    background-image: url("../img/image_large_gwc.svg");
+    width: 20px;
+    height: 44px;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    padding: 0 10px;
+    margin-right: 66px;
+}
+.nav-list2 li{
+    width:33.333%;
+    float: left;
+}
+.nav-list2 li:nth-child(2) a{
+    width: 100%;
+    text-align: center;
+}
+.nav-list2 .nav-list-li{
+    height:44px;
+    position: relative;
+}
+.nav-list2 .nav-list-li a{
+    position: absolute;
+    right: 0;
+    margin-right: 0;
+}
+.nav-lb{
+    z-index: 99999;
+    position: relative;
+    margin-left: -22px;
+    background: black;
+}
+.nav-lb li{
+    padding: 10px 25px;
+    width: 100%;
+    border-bottom: 1px solid #333333;
+}
+.nav-lb li:last-child{
+    border-bottom: 1px solid #C0C0C0;
+}
+.nav-lb li a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+.box{
+    width:100%;
+    height:520px;
+    position: relative;
+    overflow: hidden;
+}
+.button-left,.button-right{
+    position: absolute;
+    width:64px;
+    height:64px;
+    border-radius: 32px;
+    background-color: rgba(180,180,180,0.25);
+    font-size: 40px;
+    line-height: 60px;
+    top:0;
+    bottom: 0;
+    margin: auto 25px;
+    text-align: center;
+    color: #848484;
+    display: none;
+    cursor: pointer;
+    z-index: 100;
+}
+.box:hover .button-left{
+    display: block;
+}
+.box:hover .button-right{
+    display: block;
+}
+.button-right{
+    right:0;
+}
+.btn{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom:20px;
+    display: inline-block;
+    margin: 0 auto;
+    width: 180px;
+    z-index: 9999;
+}
+.btn .lunbo_dian{
+    background: #ccc;
+    margin: 0 5px;
+    width: 50px;
+    height: 2px;
+    float: left;
+    position: relative;
+}
+.btn .lunbo_dian .jindu{
+    height: 2px;
+    width: 0;
+    background-color: #000;
+}
+.box .row{
+    height: 100%;
+}
+
+.lb1{
+    position: absolute;
+    left: 0;
+    height: 520px;
+    background: url("../img/macbookpro_large.jpg");
+    background-size: auto 100%;
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+}
+.lb2{
+    position: absolute;
+    left:0;
+    height: 520px;
+    background: url("../img/iphone_large.jpg");
+    background-size: 100% 100%;
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+}
+.lb3{
+    position: absolute;
+    left:0;
+    height: 520px;
+    background: url("../img/event_large.jpg");
+    background-size: 100% 100%;
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+}
+.lie{
+    height:202px;
+}
+.promo-title{
+    height:200px;
+    box-sizing: border-box;
+    border-top: 2px solid rgb(255, 255, 255);
+    border-right: 2px solid rgb(255, 255, 255);
+}
+.promo1{
+    background-image: url("https://www.apple.com/cn/home/images/promos/nike_watch_small.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.promo2{
+    background-image: url("https://www.apple.com/cn/home/images/promos/airpods_small.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.promo3{
+    background-image: url("https://www.apple.com/cn/home/images/promos/iphone_upgrade_small.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.promo4{
+    background-image: url("https://www.apple.com/cn/home/images/promos/accessibility_small.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.foot{
+    width:100%;
+    background: #F2F2F2;
+}
+.foot_1{
+    max-width: 980px;
+    margin: 0px auto;
+    padding: 0px 22px;
+}
+.foot_t{
+    width:100%;
+}
+.gf{
+    color: rgb(153, 153, 153);
+    border-bottom: 1px solid rgb(227, 227, 227);
+    padding: 16px 0px 11px;
+    font-size: 12px;
+    line-height: 1.33333;
+    font-weight: 400;
+    letter-spacing: normal;
+    border-bottom: 1px solid #E3E3E3;
+}
+.zt{
+    font-size: 12px;
+    line-height: 1.66667;
+    font-weight: 400;
+    letter-spacing: normal;
+    position: relative;
+    z-index: 1;
+    padding-top: 20px;
+}
+.zt-1{
+    width:20%;
+    float: left;
+}
+.zt-zi{
+    height: auto;
+}
+.zt-zi h3{
+    font-size: 12px;
+}
+.zt-zi-li{
+    width:176px;
+}
+.zt .zt-zi .zt-zi-ul .zt-zi-li a:hover{
+    text-decoration:underline;
+}
+.foot-b{
+    color: rgb(153, 153, 153);
+    padding: 20px 0px 24px;
+    text-align: left;
+    font-size: 12px;
+}
+.foot-b1{
+    border-bottom: 1px solid rgb(227, 227, 227);
+    max-height: 9999px;
+    margin-bottom: 6px;
+    padding-bottom: 5px;
+}

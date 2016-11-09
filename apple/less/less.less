@@ -1,0 +1,146 @@
+@import "var.less";
+*{
+  box-sizing: border-box;
+}
+/*小屏的时候*/
+.container{
+  &{
+     width:@num1*1-@minWidth;
+     margin: auto;
+  }
+  &>.row{
+    width:100%;
+    .clear;
+  }
+  &-fluid{
+    width:100%;margin:auto;
+  }
+  &-fluid>.row{
+    width:100%;
+    .clear;
+  }
+}
+/*最小屏*/
+.loop();
+.col-s-hide{
+  display: none;
+}
+.nav-list{
+  display: none;
+}
+.nav-list2{
+  display:block;
+}
+.nav-lb li{
+  clear: both;
+  width: 100%;
+}
+/*中屏*/
+@media screen and (min-width: @num1){
+  .container{
+      width:@num1;
+      margin: auto;
+    }
+ .loop(m);
+  .col-s-hide{
+    display: block;
+  }
+  .col-l-hide{
+    display: block;
+  }
+  .col-m-hide{
+    display: none;
+  }
+  .nav-list{
+    display: block;
+  }
+  .nav-list-hide{
+    display: none;
+  }
+}
+
+/*大屏*/
+@media screen and (min-width: @num2){
+  .container{
+    width:@num2;
+    margin: auto;
+  }
+  .loop(l);
+  .col-s-hide{
+    display: block;
+  }
+  .col-m-hide{
+    display: block;
+  }
+  .col-l-hide{
+    display: none;
+  }
+  .nav-list{
+    display: block;
+  }
+  .nav-list-hide{
+    display: none;
+  }
+}
+//栅格化的核心代码
+.loop(@type:s,@i:1) when (@i<=@cols){
+  .container>.row>.col-@{type}-@{i}{
+    float:left;
+    width:@i/@cols*100%;
+  }
+  .container-fluid>.row>.col-@{type}-@{i}{
+    float:left;
+    width:@i/@cols*100%;
+  }
+  .loop(@type,@i+1);
+}
+
+/*清除浮动*/
+.clear(){
+  &:before,&:after{
+    content: "";
+    display: block;
+  }
+  &:after{
+    clear:both;
+  }
+}
+.zt .zt-zi .zt-zi-ul .zt-zi-li a{
+  color: #666666;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 767px){
+    .zt .zt-1{
+      width: 100%;
+    }
+  .zt .zt-1 .zt-zi{
+    border-bottom: 1px solid #e3e3e3;
+  }
+  .zt .zt-zi .zt-zi-ul .zt-zi-li{
+    width: 100%;
+  }
+   .zt .zt-zi h3{
+     background: #f2f2f2;
+     cursor: pointer;
+     font-size: 14px;
+     line-height: 2.78571;
+     font-weight: 400;
+     font-family: inherit;
+   }
+  .zt .zt-zi h3:after{
+    content: '+';
+    float: right;
+    font-weight: normal;
+    margin-right: 8px;
+  }
+}
+.ac-item-last{
+  display: inline-block;
+  position: relative;
+  height:44px;
+  z-index: 1;
+  width:100%;
+  overflow: hidden;
+  vertical-align: top;
+}
