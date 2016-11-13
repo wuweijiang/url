@@ -299,7 +299,7 @@
     left: 0;
     height: 520px;
     background: url("../img/macbookpro_large.jpg");
-    background-size:cover;
+    background-size:contain;
     background-position:50% 70px;
     background-repeat: no-repeat;
 }
