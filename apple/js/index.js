@@ -77,8 +77,40 @@ $(function(){
 
 
     $(".lunbo_dian").click(function(){
-        next=$(this).index(".lunbo_dian");
-        stop();
+        next=$(this).index();
+        if(next>now){
+             clearInterval(t1);
+            clearInterval(t2);
+
+        /*按钮的变化*/
+        $(".lunbo_dian").find(".jindu").css("width",0);
+        $(".lunbo_dian").eq(next).find(".jindu").css("width","100%");
+
+            $(".list:eq("+now+")").animate({width:"80%",height:"80%"}).css("zIndex",0);
+            $(".list:eq("+next+")").animate({left:0},function(){
+            $(".list:eq("+now+")").css({
+                width:"100%",
+                height:"100%",
+                left:"100%" 
+            })
+               now=next;
+            }).css("zIndex",1)
+        }else if(next<now){
+             clearInterval(t1);
+        clearInterval(t2);
+
+        /*按钮的变化*/
+        $(".lunbo_dian").find(".jindu").css("width",0);
+        $(".lunbo_dian").eq(next).find(".jindu").css("width","100%");
+
+           $(".list:eq("+now+")").animate({left:"100%"}).css("zIndex",1);
+            $(".list").eq(next).css({
+                width:"80%",height:"80%",left:0
+            }).animate({width:"100%",height:"100%"},function(){
+                now=next;
+            })
+        }
+        
     })
 
     $(".leftBtn").click(function(){

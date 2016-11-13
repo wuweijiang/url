@@ -53,8 +53,13 @@
     text-decoration: none;
     color:white;
     margin-right: 66px;
+    opacity: 1;
+    transition: opacity 280ms linear;
 }
+
 .nav-link-mac{
+     opacity:1;
+    transition: opacity 280ms linear;
     display: block;
     background-size: 20px 44px;
     background-image: url("../img/image_large_mac.svg");
@@ -70,6 +75,8 @@
     margin-right: 66px;
 }
 .nav-link-ipad{
+     opacity:1;
+    transition: opacity 280ms linear;
     display: block;
     background-size: 20px 44px;
     background-image: url("../img/image_large_ipad.svg");
@@ -85,6 +92,8 @@
     margin-right: 66px;
 }
 .nav-link-iphone{
+     opacity:1;
+    transition: opacity 280ms linear;
     display: block;
     background-size: 20px 44px;
     background-image: url("../img/image_large_iphone.svg");
@@ -100,6 +109,8 @@
     margin-right: 66px;
 }
 .nav-link-watch{
+     opacity:1;
+    transition: opacity 280ms linear;
     display: block;
     background-size: 20px 44px;
     background-image: url("../img/image_large_watch.svg");
@@ -115,6 +126,8 @@
     margin-right: 66px;
 }
 .nav-link-music{
+     opacity:1;
+    transition: opacity 280ms linear;
     display: block;
     background-size: 20px 44px;
     background-image: url("../img/image_large_music.svg");
@@ -130,6 +143,8 @@
     margin-right: 66px;
 }
 .nav-link-jszc{
+     opacity:1;
+    transition: opacity 280ms linear;
     display: block;
     background-size: 20px 44px;
     background-image: url("../img/image_large_jszc.svg");
@@ -145,6 +160,8 @@
     margin-right: 66px;
 }
 .nav-link-sousuo{
+     opacity:1;
+    transition: opacity 280ms linear;
     display: block;
     background-size: 20px 44px;
     background-image: url("../img/image_large_sousuo.svg");
@@ -158,6 +175,8 @@
     margin-right: 66px;
 }
 .nav-link-gwc{
+     opacity:1;
+    transition: opacity 280ms linear;
     display: block;
     background-size: 20px 44px;
     background-image: url("../img/image_large_gwc.svg");
@@ -168,6 +187,10 @@
     background-position: 50% 50%;
     padding: 0 10px;
     margin-right: 66px;
+
+}
+.nav-link:hover,.nav-link-gwc:hover,.nav-link-sousuo:hover,.nav-link-jszc:hover,.nav-link-music:hover,.nav-link-mac:hover,.nav-link-ipad:hover,.nav-link-iphone:hover,.nav-link-watch:hover{
+    opacity:0.5;
 }
 .nav-list2 li{
     width:33.333%;
@@ -241,21 +264,28 @@
     position: absolute;
     left: 0;
     right: 0;
-    bottom:20px;
+    bottom:30px;
     display: inline-block;
     margin: 0 auto;
     width: 180px;
     z-index: 9999;
 }
 .btn .lunbo_dian{
-    background: #ccc;
+  
+    cursor:pointer;
     margin: 0 5px;
     width: 50px;
-    height: 2px;
+    height: 10px;
     float: left;
     position: relative;
 }
-.btn .lunbo_dian .jindu{
+.btn .lunbo_dian .yy{
+    margin-top:4px;
+    width:100%;
+    height:2px;
+    background-color: #ccc;
+}
+.btn .lunbo_dian .yy .jindu{
     height: 2px;
     width: 0;
     background-color: #000;
@@ -269,8 +299,8 @@
     left: 0;
     height: 520px;
     background: url("../img/macbookpro_large.jpg");
-    background-size: auto 100%;
-    background-position: 50% 0%;
+    background-size:cover;
+    background-position:50% 70px;
     background-repeat: no-repeat;
 }
 .lb2{
@@ -278,7 +308,8 @@
     left:0;
     height: 520px;
     background: url("../img/iphone_large.jpg");
-    background-size: 100% 100%;
+    background-size: auto 100%;
+    background-color: #000;
     background-position: 50% 0%;
     background-repeat: no-repeat;
 }
@@ -287,8 +318,8 @@
     left:0;
     height: 520px;
     background: url("../img/event_large.jpg");
-    background-size: 100% 100%;
-    background-position: 50% 0%;
+    background-size: cover;
+    background-position: 40% 50%;
     background-repeat: no-repeat;
 }
 .lie{
